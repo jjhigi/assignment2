@@ -1,0 +1,78 @@
+Date completed Git Lab tutorials: March 9, 2026
+Date GitHub account was set up: 01/2026
+
+
+1. Console output after pushing changes:
+
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 481 bytes | 481.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jjhigi/assignment2.git
+   478de76..82a74f3  master -> master
+
+
+2. How many commits have been done to the repository so far?
+
+Command used:
+git rev-list --count HEAD
+
+Answer:
+9 commits
+
+
+3. When was the README.md file modified last?
+
+Command used:
+git log -1 -- README.md
+
+Answer:
+Mon Mar 9 15:25:48 2026 -0400
+
+
+4. Mention two reasons why branches are used in a Git repository.
+
+Allows developers to update features without risking the main version of the project. Also allows multiple developers to work on different changes concurrently without interfering.
+
+
+5. What is the difference between git log and git status?
+
+git log shows the history of commits in the repository. git status shows the current state of the working directory and tells you which files have been modified or staged. 
+
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+
+git log -- Vehicle.h
+
+
+7. What command would you use to see the commits whose commit message contains the word “file”?
+
+git log --grep="file"
+
+
+8. In object-oriented programming:
+
+(I) What is inheritance?
+Inheritance is when a class inherits properties and behaviors from another class. The new class (child class) can extend the functionality of the parent class.
+
+(II) What is polymorphism?
+Polymorphism means the same function/method name behaving differently depending on the object/class using it.
+
+(III) What is encapsulation?
+Encapsulation means keeping data and methods operating on that data together inside a class while restricting direct access to internal details.
+
+
+9. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+
+In Dictator and Lieutenants, the project leader/dictator doesn't review every contribution directly. Instead, developers called lieutenants collect and review contributions from other developers and pass approved changes. 
+
+In Integration Manager, the project maintainer reviews and integrates contributions from other developers directly. 
+
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+
+With a team of 100 developers, Dictator and Lieutenants would help distribute the workload of reviewing and managing changes. Lieutenants handle groups of contributors and review their changes before sending them to the project leader. This makes the development process more organized and scalable.
